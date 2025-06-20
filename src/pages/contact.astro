@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us - FixIt San Diego">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        Get in Touch
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Ready to give your KitchenAid mixer, electric toothbrush, or watch a new lease on life? Let's discuss your repair needs.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Tell Us About Your Item</h2>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+            <input type="email" id="email" name="email" required
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+          
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+          
+          <div>
+            <label for="item-type" class="block text-sm font-medium text-gray-700 mb-2">Type of Item</label>
+            <select id="item-type" name="item-type" required
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="">Select an item type</option>
+              <option value="kitchenaid-mixer">KitchenAid Stand Mixer</option>
+              <option value="electric-toothbrush">Electric Toothbrush</option>
+              <option value="watch">Watch</option>
+              <option value="other">Other (please describe below)</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="brand-model" class="block text-sm font-medium text-gray-700 mb-2">Brand and Model (if known)</label>
+            <input type="text" id="brand-model" name="brand-model" placeholder="e.g., KitchenAid Professional 6-Qt, Oral-B Pro 3000"
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+          
+          <div>
+            <label for="problem" class="block text-sm font-medium text-gray-700 mb-2">Describe the Problem</label>
+            <textarea id="problem" name="problem" rows="4" required placeholder="Please describe what's wrong with your item. The more detail, the better we can help!"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+          </div>
+          
+          <div>
+            <label for="timeline" class="block text-sm font-medium text-gray-700 mb-2">Preferred Timeline</label>
+            <select id="timeline" name="timeline"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="no-rush">No rush - whenever convenient</option>
+              <option value="1-2-weeks">Within 1-2 weeks</option>
+              <option value="urgent">As soon as possible</option>
+            </select>
+          </div>
+          
+          <button type="submit" 
+                  class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            Send Repair Request
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info & FAQ -->
+      <div class="space-y-8">
+        <!-- Contact Information -->
+        <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h2>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600">📧</span>
+              <div>
+                <p class="font-medium text-gray-800">Email</p>
+                <p class="text-gray-600">fixit.electronics@example.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600">⏰</span>
+              <div>
+                <p class="font-medium text-gray-800">Response Time</p>
+                <p class="text-gray-600">Within 24-48 hours</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-3">
+              <span class="text-blue-600">📍</span>
+              <div>
+                <p class="font-medium text-gray-800">Service Area</p>
+                <p class="text-gray-600">Local pickup/dropoff available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick FAQ -->
+        <div class="bg-green-50 rounded-lg p-6 border border-green-100">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">Quick Questions</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-medium text-gray-800 mb-1">How much will it cost?</h3>
+              <p class="text-sm text-gray-600">We operate on a donation basis - pay what you can afford and what you feel the service was worth.</p>
+            </div>
+            
+            <div>
+              <h3 class="font-medium text-gray-800 mb-1">How long does a repair take?</h3>
+              <p class="text-sm text-gray-600">Most repairs take 1-2 weeks, depending on parts availability and complexity.</p>
+            </div>
+            
+            <div>
+              <h3 class="font-medium text-gray-800 mb-1">What if it can't be fixed?</h3>
+              <p class="text-sm text-gray-600">If we determine your item can't be economically repaired, there's no charge for the assessment.</p>
+            </div>
+            
+            <div>
+              <h3 class="font-medium text-gray-800 mb-1">Do you provide warranties?</h3>
+              <p class="text-sm text-gray-600">We stand behind our work and will address any issues with repairs at no additional cost.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- What to Include -->
+        <div class="bg-amber-50 rounded-lg p-6 border border-amber-100">
+          <h2 class="text-xl font-semibold text-gray-800 mb-4">When Contacting Us, Please Include:</h2>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li class="flex items-start space-x-2">
+              <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+              <span>Clear photos of the item and any visible damage</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+              <span>Brand, model, and age of the item if known</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+              <span>Detailed description of the problem</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+              <span>Any recent changes or events that might be related</span>
+            </li>
+            <li class="flex items-start space-x-2">
+              <span class="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0"></span>
+              <span>Your preferred method of contact and timeline</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-16 bg-gray-50 rounded-lg p-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        Let's Fix It Together!
+      </h2>
+      <p class="text-gray-600 mb-6">
+        Every repair helps reduce waste and keeps valuable items in use. We're here to help bring your devices back to life.
+      </p>
+      <p class="text-sm text-gray-500">
+        This is a hobby service run with passion for electronics and community support.
+      </p>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  document.querySelector('form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your interest! This is a demo form. In a real implementation, this would send your message to the repair service.');
+  });
+</script>
