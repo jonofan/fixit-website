@@ -2,134 +2,92 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="FixIt San Diego - Specialty Repair Service">
-  <div class="relative overflow-hidden">
+<Layout title="FixIt San Diego">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Hero Section -->
-    <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="py-16 text-center">
+      <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+        FixIt San Diego
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        Repair service for KitchenAid mixers, electric toothbrushes, and watches. Pay what you can.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/contact" class="bg-gray-900 text-white px-6 py-2 rounded text-sm hover:bg-gray-800 transition-colors">
+          Get Started
+        </a>
+        <a href="/services" class="border border-gray-300 text-gray-700 px-6 py-2 rounded text-sm hover:bg-gray-50 transition-colors">
+          View Services
+        </a>
+      </div>
+    </div>
+
+    <!-- Photo Placeholder -->
+    <div class="mb-16">
+      <div class="bg-gray-100 rounded-lg h-64 flex items-center justify-center">
+        <p class="text-gray-500 text-sm">[Photo: Workshop or repair in progress]</p>
+      </div>
+    </div>
+
+    <!-- What We Fix -->
+    <div class="mb-16">
+      <h2 class="text-xl font-semibold text-gray-900 mb-8 text-center">
+        What We Fix
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
         <div class="text-center">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6">
-            FixIt San Diego
-          </h1>
-          <p class="text-xl md:text-2xl mb-8 text-blue-100">
-            Specialty repair service by donation
-          </p>
-          <p class="text-lg mb-10 text-blue-200 max-w-2xl mx-auto">
-            Expert repairs for KitchenAid mixers, electric toothbrushes, watches, and more. 
-            A hobby service helping the community - pay what you can.
-          </p>
-          <div class="space-x-4">
-            <a href="/services" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              View Services
-            </a>
-            <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Get Started
-            </a>
+          <div class="bg-gray-100 rounded h-32 mb-4 flex items-center justify-center">
+            <p class="text-gray-500 text-xs">[Photo: KitchenAid mixer]</p>
           </div>
+          <h3 class="font-medium mb-2 text-gray-900">KitchenAid Mixers</h3>
+          <p class="text-sm text-gray-600">
+            Motor issues, gear problems, general maintenance
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-gray-100 rounded h-32 mb-4 flex items-center justify-center">
+            <p class="text-gray-500 text-xs">[Photo: Electric toothbrush]</p>
+          </div>
+          <h3 class="font-medium mb-2 text-gray-900">Electric Toothbrushes</h3>
+          <p class="text-sm text-gray-600">
+            Battery replacement, charging issues
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="bg-gray-100 rounded h-32 mb-4 flex items-center justify-center">
+            <p class="text-gray-500 text-xs">[Photo: Watch repair]</p>
+          </div>
+          <h3 class="font-medium mb-2 text-gray-900">Watch Repairs</h3>
+          <p class="text-sm text-gray-600">
+            Battery replacement, band adjustment
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Specialties Section -->
-    <div class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Our Specialties
-          </h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Focused expertise in specific repair areas to ensure quality results for your valued items.
-          </p>
+    <!-- How It Works -->
+    <div class="bg-gray-50 rounded-lg p-8 mb-16">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6 text-center">
+        How It Works
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div>
+          <div class="text-2xl mb-2">1</div>
+          <h3 class="font-medium mb-1">Contact</h3>
+          <p class="text-sm text-gray-600">Tell us what's broken</p>
         </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="text-center p-6 rounded-lg bg-red-50 border border-red-100">
-            <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl text-white">🥧</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">KitchenAid Mixers</h3>
-            <p class="text-gray-600">
-              Specialized repairs for all KitchenAid stand mixer models. From motor issues to gear replacements.
-            </p>
-          </div>
-          
-          <div class="text-center p-6 rounded-lg bg-blue-50 border border-blue-100">
-            <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl text-white">🦷</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">Electric Toothbrushes</h3>
-            <p class="text-gray-600">
-              Battery replacements, charging issues, and motor repairs for all major electric toothbrush brands.
-            </p>
-          </div>
-          
-          <div class="text-center p-6 rounded-lg bg-amber-50 border border-amber-100">
-            <div class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl text-white">⌚</span>
-            </div>
-            <h3 class="text-xl font-semibold mb-3 text-gray-800">Watch Repairs</h3>
-            <p class="text-gray-600">
-              Battery replacements, band adjustments, and basic movement servicing for timepieces.
-            </p>
-          </div>
+        <div>
+          <div class="text-2xl mb-2">2</div>
+          <h3 class="font-medium mb-1">Fix</h3>
+          <p class="text-sm text-gray-600">We repair your item</p>
         </div>
-      </div>
-    </div>
-
-    <!-- Why Choose Us Section -->
-    <div class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Why Choose FixIt?
-          </h2>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div class="space-y-6">
-              <div class="flex items-start space-x-4">
-                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span class="text-white text-sm">💚</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-gray-800 mb-2">By Donation Service</h3>
-                  <p class="text-gray-600">Pay what you can afford. This hobby service prioritizes helping the community over profit.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span class="text-white text-sm">🔧</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Focused Expertise</h3>
-                  <p class="text-gray-600">Specialized knowledge in specific repair areas ensures quality work on your items.</p>
-                </div>
-              </div>
-              
-              <div class="flex items-start space-x-4">
-                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span class="text-white text-sm">♻️</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-semibold text-gray-800 mb-2">Sustainable Choice</h3>
-                  <p class="text-gray-600">Extending the life of your appliances and devices reduces waste and saves money.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-gray-800 mb-4">Ready to Get Started?</h3>
-            <p class="text-gray-600 mb-6">
-              Have a KitchenAid mixer that's not working properly? Electric toothbrush not holding a charge? 
-              Watch needs a new battery? Let's get it fixed!
-            </p>
-            <a href="/contact" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors block text-center">
-              Contact Us Today
-            </a>
-          </div>
+        <div>
+          <div class="text-2xl mb-2">3</div>
+          <h3 class="font-medium mb-1">Donate</h3>
+          <p class="text-sm text-gray-600">Pay what you can</p>
         </div>
       </div>
     </div>
